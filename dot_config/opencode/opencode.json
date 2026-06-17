@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "lsp": true,
+  "agent": {
+    "plan": {
+      "disable": true
+    },
+    "build": {
+      "disable": true
+    },
+    "explore": {
+      "model": "opencode-go/qwen3.6-plus"
+    },
+    "Planner": {
+      "model": "opencode-go/qwen3.7-max"
+    },
+    "Builder": {
+      "model": "opencode-go/qwen3.7-plus"
+    }
+  }
+}
