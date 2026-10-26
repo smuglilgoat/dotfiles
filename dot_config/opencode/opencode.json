@@ -1,21 +1,121 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "lsp": true,
-  "agent": {
+  "default_agent": "Planner",
+  "agents": {
     "plan": {
-      "disable": true
+      "disabled": true
     },
     "build": {
-      "disable": true
-    },
-    "explore": {
-      "model": "opencode-go/qwen3.6-plus"
+      "disabled": true
     },
     "Planner": {
-      "model": "opencode-go/qwen3.7-max"
+      "model": "opencode-go/minimax-m3"
     },
     "Builder": {
-      "model": "opencode-go/qwen3.7-plus"
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "explore": {
+      "model": "opencode-go/mimo-v2.6-flash",
+      "permissions": [
+        {
+          "action": "edit",
+          "resource": "*",
+          "effect": "deny"
+        }
+      ]
+    },
+    "general": {
+      "model": "opencode-go/qwen3.8-flash"
+    },
+    "Reviewer": {
+      "model": "opencode-go/minimax-m3"
+    },
+    "title": {
+      "model": "opencode-go/mimo-v2.6-flash"
+    },
+    "summary": {
+      "model": "opencode-go/qwen3.8-flash"
+    },
+    "compaction": {
+      "model": "opencode-go/qwen3.8-flash"
     }
-  }
+  },
+  "provider": {
+    "lmstudio": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LM Studio (local)",
+      "options": {
+        "baseURL": "http://192.168.1.121:1234/v1"
+      },
+      "models": {
+        "qwen/qwen3.8-27b": {
+          "name": "Qwen3.8-27b"
+        }
+      }
+    },
+    "llamacpp": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama.cpp (local)",
+      "options": {
+        "baseURL": "http://localhost:8080/v1"
+      },
+      "models": {
+        "unsloth/Qwen3.8-27B-GGUF:UD-IQ3_XXS": {
+          "name": "Qwen3.8-27B-UD-IQ3_XXS"
+        }
+      }
+    }
+  },
+  "websearch": {
+    "provider": "random"
+  },
+  "experimental": {
+    "subagent_depth": 2,
+    "todo": true,
+    "background_compaction": true
+  },
+  "mcp": {
+    "servers": {
+      "mermaid-chart": {
+        "type": "remote",
+        "url": "https://chatgpt.mermaid.ai/anthropic/mcp",
+        "disabled": false
+      },
+      "figma": {
+        "type": "remote",
+        "url": "https://mcp.figma.com/mcp",
+        "disabled": false
+      },
+      "netlify": {
+        "type": "remote",
+        "url": "https://netlify-mcp.netlify.app/mcp",
+        "disabled": false
+      },
+      "supabase": {
+        "type": "remote",
+        "url": "https://mcp.supabase.com/mcp",
+        "disabled": false
+      }
+    }
+  },
+  "plugins": [
+    "@dietrichgebert/ponytail"
+  ],
+  "permissions": [
+    {
+      "action": "shell",
+      "resource": "git push*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "git reset --hard*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "rm -rf*",
+      "effect": "ask"
+    }
+  ]
 }

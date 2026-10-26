@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "fields": {
+    "lightThemeId": {
+      "updatedAt": 1793035100176,
+      "value": "openchamber-light"
+    },
+    "darkThemeId": {
+      "updatedAt": 1793035100176,
+      "value": "openchamber-dark"
+    },
+    "notifyOnSubtasks": {
+      "updatedAt": 1793035100176,
+      "value": true
+    },
+    "notifyOnCompletion": {
+      "updatedAt": 1793035100176,
+      "value": true
+    },
+    "notifyOnError": {
+      "updatedAt": 1793035100176,
+      "value": true
+    },
+    "notifyOnQuestion": {
+      "updatedAt": 1793035100176,
+      "value": true
+    },
+    "notificationTemplates": {
+      "updatedAt": 1793035100176,
+      "value": {
+        "completion": {
+          "title": "",
+          "message": ""
+        },
+        "error": {
+          "title": "",
+          "message": ""
+        },
+        "question": {
+          "title": "",
+          "message": ""
+        },
+        "subtask": {
+          "title": "",
+          "message": ""
+        }
+      }
+    },
+    "lastSelectedModel": {
+      "updatedAt": 1793035424255,
+      "value": "opencode-go/deepseek-v4.1-flash"
+    },
+    "favoriteModels": {
+      "updatedAt": 1793035424255,
+      "value": []
+    },
+    "recentModels": {
+      "updatedAt": 1793035448726,
+      "value": [
+        {
+          "providerID": "opencode-go",
+          "modelID": "deepseek-v4.1-flash"
+        },
+        {
+          "providerID": "opencode-go",
+          "modelID": "glm-5.3-flash"
+        }
+      ]
+    },
+    "hiddenModels": {
+      "updatedAt": 1793035424255,
+      "value": []
+    },
+    "collapsedModelProviders": {
+      "updatedAt": 1793035424255,
+      "value": []
+    },
+    "customProviderIcons": {
+      "updatedAt": 1793035424255,
+      "value": {}
+    },
+    "recentAgents": {
+      "updatedAt": 1793035424255,
+      "value": []
+    },
+    "favoriteAgents": {
+      "updatedAt": 1793035424255,
+      "value": []
+    },
+    "recentEfforts": {
+      "updatedAt": 1793036253810,
+      "value": {
+        "opencode-go/glm-5.3-flash": [
+          "default"
+        ],
+        "opencode-go/deepseek-v4.1-flash": [
+          "high",
+          "default"
+        ]
+      }
+    },
+    "reportUsage": {
+      "updatedAt": 1793035886897,
+      "value": false
+    },
+    "nativeNotificationsEnabled": {
+      "updatedAt": 1793035972865,
+      "value": true
+    },
+    "gitChangesViewMode": {
+      "updatedAt": 1793036037622,
+      "value": "tree"
+    },
+    "gitmojiEnabled": {
+      "updatedAt": 1793036040934,
+      "value": true
+    },
+    "filesViewShowGitignored": {
+      "updatedAt": 1793036042574,
+      "value": true
+    },
+    "workStatusPanelEnabled": {
+      "updatedAt": 1793036305863,
+      "value": false
+    },
+    "defaultAgent": {
+      "updatedAt": 1793037780298,
+      "value": "Planner"
+    },
+    "sessionTabsEnabled": {
+      "updatedAt": 1793037598978,
+      "value": true
+    },
+    "showReasoningTraces": {
+      "updatedAt": 1793037622338,
+      "value": true
+    }
+  }
+}

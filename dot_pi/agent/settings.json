@@ -1,0 +1,25 @@
+{
+  "lastChangelogVersion": "1.3.0",
+  "theme": "dark",
+  "defaultProvider": "opencode-go",
+  "defaultModel": "kimi-k2.6",
+  "packages": [
+    "git:github.com/DietrichGebert/ponytail",
+    "npm:pi-web-access",
+    "npm:pi-subagents",
+    "npm:pi-mcp-adapter",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:@upstash/context7-pi",
+    "npm:pi-open-tui"
+  ],
+  "compaction": {
+    "enabled": true
+  },
+  "retry": {
+    "enabled": true
+  },
+  "extensions": [
+    "-builtin:mcp"
+  ]
+}
