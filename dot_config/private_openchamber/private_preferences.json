@@ -55,7 +55,7 @@
       "value": []
     },
     "recentModels": {
-      "updatedAt": 1793035448726,
+      "updatedAt": 1793096269083,
       "value": [
         {
           "providerID": "opencode-go",
@@ -63,7 +63,7 @@
         },
         {
           "providerID": "opencode-go",
-          "modelID": "glm-5.3-flash"
+          "modelID": "minimax-m3"
         }
       ]
     },
@@ -80,21 +80,24 @@
       "value": {}
     },
     "recentAgents": {
-      "updatedAt": 1793035424255,
-      "value": []
+      "updatedAt": 1793090754182,
+      "value": [
+        "Planner",
+        "Builder"
+      ]
     },
     "favoriteAgents": {
       "updatedAt": 1793035424255,
       "value": []
     },
     "recentEfforts": {
-      "updatedAt": 1793036253810,
+      "updatedAt": 1793093722818,
       "value": {
-        "opencode-go/glm-5.3-flash": [
-          "default"
-        ],
         "opencode-go/deepseek-v4.1-flash": [
           "high",
+          "default"
+        ],
+        "opencode-go/minimax-m3": [
           "default"
         ]
       }
@@ -120,8 +123,8 @@
       "value": true
     },
     "workStatusPanelEnabled": {
-      "updatedAt": 1793036305863,
-      "value": false
+      "updatedAt": 1793093915214,
+      "value": true
     },
     "defaultAgent": {
       "updatedAt": 1793037780298,
@@ -134,6 +137,19 @@
     "showReasoningTraces": {
       "updatedAt": 1793037622338,
       "value": true
+    },
+    "notificationMode": {
+      "updatedAt": 1793094738419,
+      "value": "always"
+    },
+    "wideChatLayoutEnabled": {
+      "updatedAt": 0,
+      "surfaces": {
+        "web": {
+          "value": true,
+          "updatedAt": 1793094751445
+        }
+      }
     }
   }
 }
