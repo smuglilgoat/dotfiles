@@ -95,6 +95,11 @@
         "type": "remote",
         "url": "https://mcp.supabase.com/mcp",
         "disabled": false
+      },
+      "gitbook": {
+        "type": "remote",
+        "url": "https://mcp.gitbook.com/mcp",
+        "disabled": false
       }
     }
   },
