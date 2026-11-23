@@ -1,7 +1,8 @@
 ---
-description: Reviews a finished change for correctness, regressions, security, and missing tests. Never edits.
+description: Reviews a finished change for correctness, regressions, security,
+  and missing tests. Never edits.
+model: opencode-go/glm-5.3
 mode: subagent
-model: opencode-go/minimax-m3
 permissions:
   - action: edit
     resource: "*"

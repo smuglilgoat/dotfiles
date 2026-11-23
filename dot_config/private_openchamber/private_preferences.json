@@ -7,7 +7,13 @@
     },
     "darkThemeId": {
       "updatedAt": 1793035100176,
-      "value": "openchamber-dark"
+      "value": "openchamber-dark",
+      "surfaces": {
+        "web": {
+          "value": "monokai-dark",
+          "updatedAt": 1795382046068
+        }
+      }
     },
     "notifyOnSubtasks": {
       "updatedAt": 1793035100176,
@@ -47,23 +53,35 @@
       }
     },
     "lastSelectedModel": {
-      "updatedAt": 1793035424255,
-      "value": "opencode-go/deepseek-v4.1-flash"
+      "updatedAt": 1794349744283,
+      "value": "opencode-go/minimax-m3.1-flash"
     },
     "favoriteModels": {
       "updatedAt": 1793035424255,
       "value": []
     },
     "recentModels": {
-      "updatedAt": 1793096269083,
+      "updatedAt": 1795447162512,
       "value": [
+        {
+          "providerID": "opencode-go",
+          "modelID": "glm-5.3"
+        },
         {
           "providerID": "opencode-go",
           "modelID": "deepseek-v4.1-flash"
         },
         {
           "providerID": "opencode-go",
-          "modelID": "minimax-m3"
+          "modelID": "glm-5.3-flash"
+        },
+        {
+          "providerID": "opencode-go",
+          "modelID": "minimax-m3.1-flash"
+        },
+        {
+          "providerID": "opencode",
+          "modelID": "deepseek-v4.1-flash-free"
         }
       ]
     },
@@ -91,13 +109,31 @@
       "value": []
     },
     "recentEfforts": {
-      "updatedAt": 1793093722818,
+      "updatedAt": 1795041742421,
       "value": {
         "opencode-go/deepseek-v4.1-flash": [
           "high",
           "default"
         ],
         "opencode-go/minimax-m3": [
+          "default"
+        ],
+        "opencode-go/minimax-m3.1-flash": [
+          "default"
+        ],
+        "opencode-go/glm-5.3-flash": [
+          "default"
+        ],
+        "opencode/deepseek-v4.1-flash-free": [
+          "default"
+        ],
+        "opencode/glm-5.3-flash-free": [
+          "default"
+        ],
+        "opencode/beam-free": [
+          "default"
+        ],
+        "opencode-go/glm-5.3": [
           "default"
         ]
       }
@@ -142,12 +178,55 @@
       "updatedAt": 1793094738419,
       "value": "always"
     },
-    "wideChatLayoutEnabled": {
+    "notifyOnPullRequests": {
+      "updatedAt": 1793882103989,
+      "value": true
+    },
+    "lastUsedEfforts": {
+      "updatedAt": 1795041742421,
+      "value": {
+        "opencode-go/minimax-m3": null,
+        "opencode-go/deepseek-v4.1-flash": null,
+        "opencode-go/minimax-m3.1-flash": null,
+        "opencode/deepseek-v4.1-flash-free": null,
+        "opencode/glm-5.3-flash-free": null,
+        "opencode/mimo-v2.6-flash-free": null,
+        "opencode/beam-free": null,
+        "opencode-go/glm-5.3-flash": null,
+        "opencode-go/glm-5.3": null
+      }
+    },
+    "themeVariant": {
+      "updatedAt": 1795381998693,
+      "value": "dark"
+    },
+    "expandReasoningWhileStreaming": {
+      "updatedAt": 1795382095017,
+      "value": true
+    },
+    "followUpBehavior": {
+      "updatedAt": 1795382112499,
+      "value": "steer"
+    },
+    "inputSpellcheckEnabled": {
+      "updatedAt": 1795382131034,
+      "value": true
+    },
+    "themeId": {
+      "updatedAt": 0,
+      "surfaces": {
+        "web": {
+          "value": "monokai-dark",
+          "updatedAt": 1795382046068
+        }
+      }
+    },
+    "useSystemTheme": {
       "updatedAt": 0,
       "surfaces": {
         "web": {
           "value": true,
-          "updatedAt": 1793094751445
+          "updatedAt": 1795381998693
         }
       }
     }

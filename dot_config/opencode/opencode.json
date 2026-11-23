@@ -9,61 +9,50 @@
       "disabled": true
     },
     "Planner": {
-      "model": "opencode-go/minimax-m3"
+      "model": "opencode-go/glm-5.3"
     },
     "Builder": {
       "model": "opencode-go/deepseek-v4.1-flash"
     },
     "explore": {
-      "model": "opencode-go/mimo-v2.6-flash",
+      "model": "opencode-go/deepseek-v4.1-flash",
       "permissions": [
         {
           "action": "edit",
           "resource": "*",
           "effect": "deny"
+        },
+        {
+          "action": "chrome-devtools_*",
+          "resource": "*",
+          "effect": "allow"
+        },
+        {
+          "action": "browse_*",
+          "resource": "*",
+          "effect": "allow"
         }
-      ]
+      ],
+      "mode": "subagent"
     },
     "general": {
-      "model": "opencode-go/qwen3.8-flash"
+      "model": "opencode-go/glm-5.3",
+      "mode": "subagent"
     },
     "Reviewer": {
-      "model": "opencode-go/minimax-m3"
+      "model": "opencode-go/glm-5.3"
     },
     "title": {
-      "model": "opencode-go/mimo-v2.6-flash"
+      "model": "opencode-go/glm-5.3",
+      "mode": "primary"
     },
     "summary": {
-      "model": "opencode-go/qwen3.8-flash"
+      "model": "opencode-go/glm-5.3",
+      "mode": "primary"
     },
     "compaction": {
-      "model": "opencode-go/qwen3.8-flash"
-    }
-  },
-  "provider": {
-    "lmstudio": {
-      "npm": "@ai-sdk/openai-compatible",
-      "name": "LM Studio (local)",
-      "options": {
-        "baseURL": "http://192.168.1.121:1234/v1"
-      },
-      "models": {
-        "qwen/qwen3.8-27b": {
-          "name": "Qwen3.8-27b"
-        }
-      }
-    },
-    "llamacpp": {
-      "npm": "@ai-sdk/openai-compatible",
-      "name": "llama.cpp (local)",
-      "options": {
-        "baseURL": "http://localhost:8080/v1"
-      },
-      "models": {
-        "unsloth/Qwen3.8-27B-GGUF:UD-IQ3_XXS": {
-          "name": "Qwen3.8-27B-UD-IQ3_XXS"
-        }
-      }
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "mode": "primary"
     }
   },
   "websearch": {
@@ -100,6 +89,18 @@
         "type": "remote",
         "url": "https://mcp.gitbook.com/mcp",
         "disabled": false
+      },
+      "browse": {
+        "type": "local",
+        "command": [
+          "/home/grumpy/.local/bin/browse",
+          "mcp"
+        ],
+        "cwd": "/home/grumpy",
+        "pool": true,
+        "environment": {
+          "OPENCODE_BROWSER_RUNTIME": "auto-update"
+        }
       }
     }
   },
